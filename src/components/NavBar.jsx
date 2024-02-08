@@ -38,7 +38,11 @@ const NavBar = () => {
                   View Country
                 </a>
               </li>
-             
+              <li class="nav-item">
+                <a class="nav-link" href="/search">
+                  Search Country
+                </a>
+              </li>
             </ul>
           </div>
         </div>
