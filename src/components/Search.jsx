@@ -15,7 +15,7 @@ const inputHandler=(event)=>{
 const [ out,setOutput ]=useState([])
 const readvalues=()=>{
     axios.post("http://localhost:3005/api/country/search",input).then((response)=>{
-        setOutput(response.data)
+        setOutput(response.data.countrydat)
     })
 }
 useEffect(()=>{readvalues()},[])
@@ -36,6 +36,7 @@ useEffect(()=>{readvalues()},[])
                     </div>
                 </div>
             </div>
+            <br></br>
             <div className="container">
     <div className="row">
         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
